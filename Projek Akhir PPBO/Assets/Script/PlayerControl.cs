@@ -61,11 +61,11 @@ public class PlayerControl : MonoBehaviour
 
     void FlipPlayer()
     {
-        if(rb.velocity.x < -0.1f)
+        if(rb.velocity.x < -0.05f)
         {
             sp.flipX = true;
         }
-        else if(rb.velocity.x > 0.1f)
+        else if(rb.velocity.x > 0.05f)
         {
             sp.flipX = false;
         }
