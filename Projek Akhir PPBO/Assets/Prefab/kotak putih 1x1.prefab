@@ -12,9 +12,10 @@ GameObject:
   - component: {fileID: 401004145696742615}
   - component: {fileID: 401004145696742612}
   - component: {fileID: 401004145696742613}
+  - component: {fileID: 2598588177843429398}
   m_Layer: 0
   m_Name: kotak putih 1x1
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -125,3 +126,16 @@ MonoBehaviour:
   damage: 1
   speed: 5
   effect: {fileID: 7424882080925386865, guid: 035faeddccc3bad4b9dd4369b7cdf0c1, type: 3}
+--- !u!114 &2598588177843429398
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 401004145696742610}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5620719818bab3e41aad0ea33bb2bb8f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  lifeTime: 10

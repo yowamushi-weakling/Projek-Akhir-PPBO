@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class Player : MonoBehaviour
 {
@@ -16,11 +17,18 @@ public class Player : MonoBehaviour
 
     public GameObject effect;
 
+    public Text healthDisplay;
+
+    public GameObject gameOver;
+
     private void Update()
     {
+        healthDisplay.text = health.ToString();
+
         if (health <= 0)
         {
-            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+           gameOver.SetActive(true);
+            Destroy(gameObject);
         }
 
         transform.position = Vector2.MoveTowards(transform.position, targetPos, speed * Time.deltaTime);
